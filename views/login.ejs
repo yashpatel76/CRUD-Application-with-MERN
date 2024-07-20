@@ -1,0 +1,53 @@
+<head>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+</head>
+<style>
+    .inputup {
+        border: none;
+        background-color: #fefefe;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .divfirst {
+        border: 1px solid #e1e1e1;
+        padding: 18px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        margin: 0;
+    }
+
+    .divsecond {
+        border: 1px solid #e1e1e1;
+        padding: 18px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top: none;
+
+    }
+</style>
+<script>
+
+</script>
+
+<div class=" container-fluid">
+        <div class="" style="background:lightgray ">
+                <form action="/login" method="POST">
+                    <div class="form-group divfirst">
+                        <label for="username" style="font-size: 14px;color:#a09b9b">Username</label>
+                        <input type="text" class="form-control inputup" value="" placeholder="" id="username"
+                            name="username" required autofocus>
+                    </div>
+                    <div class="form-group last mb-3 divsecond">
+                        <label for="password" style="font-size: 14px;color:#a09b9b">Password</label>
+                        <input type="password" class="form-control inputup" value="" placeholder="" id="password"
+                            name="password" required>
+                    </div>
+                    <input type="submit" value="Log In" class="btn btn-block btn-success" style="font-size:20px ; height: 50px;    background-color: #2373b1;
+                border-color: #0a2454;    margin-bottom: 100px;">
+                </form>
+                
+    </div>
+    <br>
+    <a href="/addUser">Add new User</a>
+</div>
